@@ -50,6 +50,7 @@ public class LekarzAdapter  extends RecyclerView.Adapter<LekarzAdapter.ViewHolde
         public ViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
+
         }
         private void setNazwalekarza(String nazwalekarza){Nazwa.setText(nazwalekarza);}
         private void setSpecjalizacja(String specjalizacja){Specjalizacja.setText(specjalizacja);}

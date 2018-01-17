@@ -19,7 +19,7 @@
         android:text="Umów wizytę"
         android:background="@color/colorPrimary"
         android:textColor="#FFFFFF"
-        android:textSize="20dp"
+        android:textSize="25dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -33,16 +33,20 @@
         android:text="Wpisz pesel pacjenta dla którego chcesz umówić wizytę"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#3c8c4a"
+        android:gravity="center"
         android:textSize="15sp"
-        android:gravity="center"/>
+       />
 
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Podaj numer pesel"
-
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
         android:gravity="center"
         android:textColor="@color/colorPrimary" />
 
@@ -60,7 +64,7 @@
         android:layout_gravity="bottom"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         android:background="@color/colorPrimary"
         android:text="WYBIERZ LEKARZA"
         android:textColor="@android:color/white" />
