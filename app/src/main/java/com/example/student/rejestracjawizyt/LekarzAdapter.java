@@ -30,8 +30,8 @@ public class LekarzAdapter  extends RecyclerView.Adapter<LekarzAdapter.ViewHolde
 
     @Override
     public void onBindViewHolder(LekarzAdapter.ViewHolder holder, int position) {
-        //holder.setNazwalekarza(lekarze.get(position).getNazwa());
-        //holder.setSpecjalizacjalekarza(lekarze.get(position).getSpecjalizacja());
+        holder.setNazwalekarza(lekarze.get(position).getNazwa());
+        holder.setSpecjalizacja(lekarze.get(position).getSpecjalizacja());
     }
 
     @Override
@@ -41,17 +41,18 @@ public class LekarzAdapter  extends RecyclerView.Adapter<LekarzAdapter.ViewHolde
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.nazwalekarza)
-        TextView nazwalekarza;
+        TextView Nazwa;
 
         @BindView(R.id.specjalizacjalekarza)
-        TextView specjalizacjalekarza;
+        TextView Specjalizacja;
 
 
         public ViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
         }
-        //private void setNazwalekarza(String nazwalekarza){nazwalekarza.setText(nazwalekarza);}
-        //private void setSpecjalizacjalekarza(String specjalizacjalekarza){specjalizacjalekarza.setText(specjalizacjalekarza);}
+        private void setNazwalekarza(String nazwalekarza){Nazwa.setText(nazwalekarza);}
+        private void setSpecjalizacja(String specjalizacja){Specjalizacja.setText(specjalizacja);}
+
     }
 }
