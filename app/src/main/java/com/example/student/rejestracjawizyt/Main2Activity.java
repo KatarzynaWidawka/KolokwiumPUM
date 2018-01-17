@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -21,6 +23,16 @@ public class Main2Activity extends AppCompatActivity {
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
+
+        ArrayList<LEKARZ>lekarze=new ArrayList<>();
+        lekarze.add(new LEKARZ("Adam Kowaliski","dermatolog"));
+        lekarze.add(new LEKARZ("Jan Kowaliski","dermatolog"));
+        lekarze.add(new LEKARZ("Michał Kowaliski","dermatolog"));
+        lekarze.add(new LEKARZ("Piotrek Kowaliski","dermatolog"));
+
+        LekarzAdapter lekarzAdapter=new LekarzAdapter(lekarze);
+        recyclerView.setAdapter(lekarzAdapter);
+
 
     }
 }
