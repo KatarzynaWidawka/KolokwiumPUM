@@ -54,7 +54,7 @@
         android:src="@drawable/ic_healing_black_24dp"/>
 
     <Button
-        android:id="@+id/button_danie"
+        android:id="@+id/button_lekarz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
