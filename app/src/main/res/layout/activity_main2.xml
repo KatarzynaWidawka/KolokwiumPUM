@@ -16,7 +16,7 @@
 
     <Button
         android:id="@+id/button_zatwierdz"
-        android:text="Zamów"
+        android:text="ZATWIERDŹ"
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:layout_width="match_parent"
