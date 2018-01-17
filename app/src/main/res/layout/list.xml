@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+        >
+    <TextView
+        android:id="@+id/nazwalekarza"
+        android:layout_width="match_parent"
+        android:background="#FFFF"
+        android:layout_height="100dp"
+        android:layout_marginBottom="120dp"
+        android:text="Lekarz"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/specjalizacjalekarza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="dermatolog"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/button_wybierz"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/specjalizacjalekarza"
+
+        android:background="@color/colorPrimary"
+        android:text="Wybierz"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button_lekarz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="460dp"
+        android:background="@color/colorPrimary"
+        android:text="ZATWIERDZ"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
